@@ -2,6 +2,7 @@
   import Social from "./components/Social.svelte";
   import Timeline from "./components/Timeline.svelte";
   import Experience from "./components/Experience.svelte";
+  import Award from "./components/Award.svelte";
 
   let socials = [
     {
@@ -117,6 +118,46 @@
     alt=""
     href=""
     description="Advanced Highers: Geography (A), Biology (B), English (B) · Highers: 5 (3A, 2B)"/>
+  </section>
+  <section>
+    <h2>Work Experience</h2>
+    <Experience 
+    position="Research Assistant"
+    org="Durham University"
+    date="May - June 2021"
+    src="./images/Durham-University-logo-dark.svg"
+    alt=""
+    href="https://www.durham.ac.uk/departments/academic/geography/"
+    description="Used QGIS to map the historical and contemporary movement of penguin colonies in Antarctica from Landsat and Sentinel imagery using the Google Earth Engine Digitisation Tool."/>
+    <Experience 
+    position="GIS Consultant"
+    org="Findlay Ecology Services"
+    date="Janueary 2021"
+    src="./images/Findlay-ecology-services-logo-transparent-001.png"
+    alt="Findlay Ecology Services"
+    href="http://www.findlayecologyservices.co.uk/"
+    description="Freelance mapping using QGIS for a local ecology company to show land‑cover and map project‑specific data. I created a series of maps which were incorporated into a vegetation survey report and produced a set of clear instructions on how to repeat work for consultant’s future use."/>
+    <Experience 
+    position="Marine Geoscientist"
+    org="British Geological Survey"
+    date="Janueary 2021"
+    src="./images/British_Geological_Survey.png"
+    alt="British Geological Survey"
+    href="https://www.bgs.ac.uk/"
+    description="I joined the Marine Geoscience Team to map geomorphology, sediments and bedrock geology offshore of Anglesey in an area dominated by landforms associated with the Irish Sea Ice Stream and contemporary marine processes. I reviewed previous literature and gained experience with the SIGMA geological mapping tools in ArcGIS, as well as familiarity with bathymetric geospatial data to create a high quality map which has been incorporated into the BGS Anglesey offshore mapping project."/>
+  </section>
+  <section>
+    <h2>Awards</h2>
+    <Award 
+    position="The Willimott Prize"
+    org="Durham Geography Department"
+    date="2019"
+    description="I was awarded the Willimott Prize by Durham Geography Department for attaining the second highest grade in the year and substantial work in glacial geomorphology and sedimentology."/>
+    <Award 
+    position="Duke of Ediburgh's Award"
+    org="Gold, Silver, and Bronze"
+    date="2014 - 2017"
+    description=""/>
   </section>
 </main>
 <footer>Designed and built by Mel Marochov | 2023</footer>
