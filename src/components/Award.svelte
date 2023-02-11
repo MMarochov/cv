@@ -14,34 +14,26 @@
   <p>{description}</p>
   </section>
   
-  <style>
-      .container {
-          max-width: 80%;
-          text-align: left;
-      }
-    .date {
-        color: grey;
-        margin: 0;
+<style>
+    .container {
+        max-width: 80%;
+        text-align: left;
     }
-  
-    .header {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: center;
-    }
-  
-    h3 {
+  .date {
+      color: grey;
       margin: 0;
-    }
-  
-    a {
-        padding: 4px;
-        border-radius: 2px;
-    }
-  
-    img {
-      height: 30px;
-    }
+  }
+
+  .header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  h3 {
+    margin: 0;
+  }
+
   </style>
   
