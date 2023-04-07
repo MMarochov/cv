@@ -4,60 +4,8 @@
   import Experience from "./components/Experience.svelte";
   import Award from "./components/Award.svelte";
   import SkillSet from "./components/SkillSet.svelte";
-
-  let socials = [
-    {
-      social: "Website",
-      name: "itsmel.io",
-      href: "https://itsmel.io",
-      icon: "fa-solid fa-rocket",
-    },
-    {
-      social: "GitHub",
-      name: "MMarochov",
-      href: "https://github.com/MMarochov",
-      icon: "fa-brands fa-square-github",
-    },
-    {
-      social: "LinkedIn",
-      name: "Melanie Marochov",
-      href: "https://linkedin.com/in/melanie-marochov-a41385172",
-      icon: "fa-brands fa-linkedin",
-    },
-  ];
-
-  let placements = [
-    {
-      open: true,
-      org: "Ordnance Survey",
-      role: "Graduate Technical Consultant",
-      team: "Developer Experience Team",
-      months: "September - present",
-      years: "2022/23",
-      description:
-        "As part of the Developer Experience team within Consultancy and Technical Services, I've worked on shaping a critical national dataset that will underpin the census, gained valuable insight into customer relationships, and increased my skills in data visualisation and manipulation.",
-    },
-    {
-      open: true,
-      org: "Ordnance Survey",
-      role: "Graduate Data Scientist",
-      team: "Rapid Prototyping Team",
-      months: "April - September",
-      years: "2022",
-      description:
-        "Joining the Rapid Prototyping Team got me thrown in at the deep end of geospatial data science and web development. I worked on a diverse array of prototypes, enhancing skills such as Python programming and agile development. The fast-paced environment and fun team culture made the RPT my favourite placement.",
-    },
-    {
-      open: true,
-      org: "Ordnance Survey",
-      role: "Graduate Research Scientist",
-      team: "Research Team",
-      months: "September - March",
-      years: "2021/22",
-      description:
-        "In my first placement I focused on advancing OS's efforts to incorporate ethical practice in geospatial data and artificial intelligence (GeoAI) workflows. Some of the highlights were running an external-facing hybrid workshop on practical tools in GeoAI ethics, and creating a Model Hub for OS's machine learning algorithms.",
-    },
-  ];
+  import { socials } from "./socials.js"
+  import { placements } from "./placements.js"
 </script>
 
 <main>
@@ -80,16 +28,15 @@
       src="./images/Ordnance-Survey-logo-dark.svg"
       alt="Ordnance Survey logo"
       href="https://www.ordnancesurvey.co.uk/"
-      description="I began the Ordnance Survey Graduate Scheme in 2021 and have traversed the business through three placements:"
+      description="I began the Ordnance Survey Graduate Scheme in 2021, specialising in spatial data science, web development, and practical ethics at the intersection of geospatial data and artifical intelligence (GeoAI). I've traversed the business through three placements:"
     />
     {#each placements as p}
       <Timeline
         open={p.open}
-        org={p.org}
         role={p.role}
         team={p.team}
         months={p.months}
-        years={p.years}
+        skills={p.skills}
         description={p.description}
       />
     {/each}

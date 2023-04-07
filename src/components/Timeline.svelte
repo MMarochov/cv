@@ -5,12 +5,11 @@
 
   // Props
   export let open;
-  export let org;
   export let role;
   export let team;
   export let months;
-  export let years;
   export let description;
+  export let skills;
 
   let isOpen = false;
   const toggle = () => (isOpen = !isOpen);
@@ -21,6 +20,10 @@
   <section id="timeline-entry">
     <div id="date">
       <p>{months}</p>
+      <p>Key Skills:</p>
+      {#each skills as s}
+        <div class="skill"> {s} </div>
+      {/each}
     </div>
     <summary id="panel" on:click={toggle}>
       <button>
@@ -57,6 +60,14 @@
     padding-top: 0.3rem;
     font-size: 0.8rem;
     font-weight: bold;
+  }
+  
+  .skill {
+    background: red;
+    border-radius: 10px;
+    width: fit-content;
+    padding: 0 10px;
+    margin: 5px;
   }
 
   p {
