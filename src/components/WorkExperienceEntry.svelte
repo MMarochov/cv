@@ -1,38 +1,39 @@
-<!-- Experience.svlete -->
 <script>
   export let position;
   export let org;
   export let date;
-  export let description;
+  export let src;
+  export let alt;
 </script>
 
 <section class="container">
-  <p class="date">{date}</p>
-  <div class="header">
-    <h3>{position} | {org}</h3>
+  <div class="text">
+    <p class="date">{date}</p>
+  <h3>{position}</h3>
+  <p>{org}</p>
   </div>
-  <p>{description}</p>
+  <img {src} {alt} />
 </section>
 
 <style>
   .container {
     text-align: left;
-    padding: 0 20px;
-  }
-
-  .date {
-    color: grey;
-    margin: 0;
-  }
-
-  .header {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    margin: 20px;
   }
 
-  h3 {
+  .text {
+    display: flex;
+    flex-direction: column;
+  }
+
+  h3, p {
     margin: 0;
+  }
+
+  img {
+    height: 30px;
   }
 </style>

@@ -1,4 +1,4 @@
-let socials = [
+export const socials = [
     {
       social: "Website",
       name: "itsmel.io",
@@ -9,7 +9,7 @@ let socials = [
       social: "GitHub",
       name: "MMarochov",
       href: "https://github.com/MMarochov",
-      icon: "fa-brands fa-square-github",
+      icon: "fa fa-github",
     },
     {
       social: "LinkedIn",
@@ -18,5 +18,3 @@ let socials = [
       icon: "fa-brands fa-linkedin",
     },
   ];
-
-  export {socials}

@@ -1,6 +1,5 @@
 <!-- Social.svelte -->
 <script>
-  export let social;
   export let name;
   export let href;
   export let icon;
@@ -12,13 +11,12 @@
 </p>
 
 <style>
-
   p {
     margin: 8px;
-    padding: 3px 7px 3px 7px;
+    padding: 3px 10px;
     display: flex;
     align-items: center;
-    border-radius: 2px;
+    border-radius: 10px;
   }
 
   i {
@@ -28,8 +26,4 @@
   a {
     margin-left: 5px;
   }
-
-  /* a:hover {
-    text-decoration: underline;
-  } */
 </style>

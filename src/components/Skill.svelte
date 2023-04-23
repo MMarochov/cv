@@ -1,26 +1,34 @@
-<!-- Stole from Josh Pooley -->
 <script>
-    // Imports
-    import RatingBar from "./RatingBar.svelte";
-    // Props
-    export let name;
-    export let rating;
-    export let delay;
-  </script>
-  
-  <div>
-    <h4>{name}</h4>
-    <RatingBar {rating} {delay}/>
-  </div>
+  // Imports
+  import CircleProgressBar from "./CircleProgressBar.svelte";
+  // Props
+  export let name;
+  export let progress;
+</script>
+
+<div class="container">
+  <CircleProgressBar {progress} />
   <div id="details">
-      <slot></slot>
+    <h4>{name}</h4>
+    <slot />
   </div>
-  
-  <style>
-      h4 {
-          margin-bottom: 5px;
-      }
-      #details {
-        max-width: 380px;
-      }
-  </style>
+</div>
+
+<style>
+  .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: left;
+    padding: 10px 0;
+  }
+
+  h4 {
+    margin: 0;
+  }
+
+  #details {
+    padding-left: 10px;
+    max-width: 310px;
+  }
+</style>

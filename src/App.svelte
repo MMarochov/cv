@@ -1,134 +1,124 @@
 <script>
+  // Imports
   import Social from "./components/Social.svelte";
   import Timeline from "./components/Timeline.svelte";
   import Experience from "./components/Experience.svelte";
   import Award from "./components/Award.svelte";
-  import SkillSet from "./components/SkillSet.svelte";
-  import { socials } from "./socials.js"
-  import { placements } from "./placements.js"
+  import EducationEntry from "./components/EducationEntry.svelte";
+  import WorkExperienceEntry from "./components/WorkExperienceEntry.svelte";
+  import Skill from "./components/Skill.svelte";
+  import { socials } from "./socials.js";
+  import { placements } from "./placements.js";
+  import { education } from "./education.js";
+  import { workExperience } from "./workExperience.js";
+  import { skills } from "./skills.js";
+  import { interests } from "./interests.js";
 </script>
 
 <main>
-  <header>
-    <img src="./images/mel.jpg" alt="Mel's headshot" />
-    <h1>Melanie Marochov</h1>
-    <p>Geospatial Data Scientist and Developer</p>
-    <div class="social">
-      {#each socials as s}
-        <Social social={s.social} name={s.name} href={s.href} icon={s.icon} />
+  <div class="content">
+    <header>
+      <img src="./images/mel.jpg" alt="Mel's headshot" />
+      <h1>Melanie Marochov</h1>
+      <p>Geospatial Data Scientist and Developer</p>
+      <div class="social">
+        {#each socials as s}
+          <Social social={s.social} name={s.name} href={s.href} icon={s.icon} />
+        {/each}
+      </div>
+    </header>
+    <section>
+      <h2>Employment History</h2>
+      <Experience
+        position="Graduate Scheme"
+        org="Ordnance Survey"
+        date="September 2021 - present"
+        src="./images/Ordnance-Survey-logo-dark.svg"
+        alt="Ordnance Survey logo"
+        href="https://www.ordnancesurvey.co.uk/"
+        description="Throughout the graduate scheme I have specialised in spatial data science, web development, and practical ethics at the intersection of geospatial data and artifical intelligence (GeoAI). I've traversed the business through three placements:"
+      />
+      {#each placements as p}
+        <Timeline
+          open={p.open}
+          role={p.role}
+          team={p.team}
+          months={p.months}
+          years={p.years}
+          skills={p.skills}
+          description={p.description}
+        />
       {/each}
-    </div>
-  </header>
-  <section>
-    <h2>Employment History</h2>
-    <Experience
-      position="Graduate Scheme"
-      org="Ordnance Survey"
-      date="September 2021 - present"
-      src="./images/Ordnance-Survey-logo-dark.svg"
-      alt="Ordnance Survey logo"
-      href="https://www.ordnancesurvey.co.uk/"
-      description="I began the Ordnance Survey Graduate Scheme in 2021, specialising in spatial data science, web development, and practical ethics at the intersection of geospatial data and artifical intelligence (GeoAI). I've traversed the business through three placements:"
-    />
-    {#each placements as p}
-      <Timeline
-        open={p.open}
-        role={p.role}
-        team={p.team}
-        months={p.months}
-        skills={p.skills}
-        description={p.description}
-      />
-    {/each}
-  </section>
-  <section>
-    <h2>Education</h2>
-    <Experience
-      position="M. Sc. (Research), Geography"
-      org="Durham University"
-      date="October 2019 ‑ December 2020"
-      src="./images/Durham-University-logo-dark.svg"
-      alt="Durham University logo"
-      href="https://www.durham.ac.uk/departments/academic/geography/"
-      description="The crux of my postgraduate research was to develop a method which uses deep learning for semantic segmentation of Sentinel-2 satellite imagery containing marine-terminating glaciers in Greenland. I published a paper in one of the top peer-reviewed glaciology journals, presented at the EGU2020: Sharing Geoscience Online conference, demonstrated in undergraduate Remote Sensing practicals, and represented M.Sc.(Res) students as the Research Postgraduate Committee representative."
-    />
-    <Experience
-      position="B. Sc., Geography"
-      org="Durham University"
-      date="October 2016 ‑ July 2019"
-      src="./images/Durham-University-logo-dark.svg"
-      alt="Durham University logo"
-      href="https://www.durham.ac.uk/departments/academic/geography/"
-      description="First Class Honours"
-    />
-    <Experience
-      position="Advanced Highers, Highers"
-      org="Jedburgh Grammar School"
-      date="June 2015 - June 2016"
-      src=""
-      alt=""
-      href=""
-      description="Advanced Highers: Geography (A), Biology (B), English (B) · Highers: 5 (3A, 2B)"
-    />
-  </section>
-  <section>
-    <h2>Work Experience</h2>
-    <Experience
-      position="Research Assistant"
-      org="Durham University"
-      date="May - June 2021"
-      src="./images/Durham-University-logo-dark.svg"
-      alt=""
-      href="https://www.durham.ac.uk/departments/academic/geography/"
-      description="Used QGIS to map the historical and contemporary movement of penguin colonies in Antarctica from Landsat and Sentinel imagery using the Google Earth Engine Digitisation Tool."
-    />
-    <Experience
-      position="GIS Consultant"
-      org="Findlay Ecology Services"
-      date="Janueary 2021"
-      src="./images/Findlay-ecology-services-logo-transparent-001.png"
-      alt="Findlay Ecology Services"
-      href="http://www.findlayecologyservices.co.uk/"
-      description="Freelance mapping using QGIS for a local ecology company to show land‑cover and map project‑specific data. I created a series of maps which were incorporated into a vegetation survey report and produced a set of clear instructions on how to repeat work for consultant’s future use."
-    />
-    <Experience
-      position="Marine Geoscientist"
-      org="British Geological Survey"
-      date="Janueary 2021"
-      src="./images/British_Geological_Survey.png"
-      alt="British Geological Survey"
-      href="https://www.bgs.ac.uk/"
-      description="I joined the Marine Geoscience Team to map geomorphology, sediments and bedrock geology offshore of Anglesey in an area dominated by landforms associated with the Irish Sea Ice Stream and contemporary marine processes. I reviewed previous literature and gained experience with the SIGMA geological mapping tools in ArcGIS, as well as familiarity with bathymetric geospatial data to create a high quality map which has been incorporated into the BGS Anglesey offshore mapping project."
-    />
-  </section>
-  <section id="duo-column">
-    <div id="col1">
-      <h2>Publications</h2>
-      <p>
-        <a href="https://tc.copernicus.org/articles/15/5041/2021/"
-        >Image classification of marine-terminating outlet glaciers in
-        Greenland using deep learning methods</a
-        > Marochov et al. 2021 | The Cryosphere, European Geosciences Union
-      </p>
-      <h2>Awards</h2>
-      <Award
-      position="The Willimott Prize"
-      org="Durham Geography Department"
-      date="2019"
-      description="I was awarded the Willimott Prize by Durham Geography Department for attaining the second highest grade in the year and substantial work in glacial geomorphology and sedimentology."
-      />
-      <Award
-      position="Duke of Ediburgh's Award"
-      org="Gold, Silver, and Bronze"
-      date="2014 - 2017"
-      description=""
-      />
-    </div>
-    <div>
-      <h2>Skills</h2>
-      <SkillSet />
-    </div>
-  </section>
+    </section>
+    <section class="education">
+      <h2>Education</h2>
+      {#each education as e}
+        <EducationEntry
+          education={e.education}
+          institution={e.institution}
+          date={e.date}
+          headline={e.headline}
+          description={e.description}
+        />
+      {/each}
+    </section>
+    <section />
+    <section id="duo-column">
+      <div class="col first">
+        <section class="workExp">
+          <h2>Skills</h2>
+          {#each skills as s}
+            <Skill name={s.name} progress={s.rating}>{s.text}</Skill>
+          {/each}
+        </section>
+        <div class="publications">
+          <h2>Publications</h2>
+
+          <p class="hover-1">
+            <a href="https://tc.copernicus.org/articles/15/5041/2021/"
+              >Image classification of marine-terminating outlet glaciers in
+              Greenland using deep learning methods</a
+            >
+          </p>
+          <p class="padded">
+            Marochov et al. 2021 | The Cryosphere, European Geosciences Union
+          </p>
+        </div>
+      </div>
+      <div class="col second">
+        <h2>Work Experience</h2>
+        {#each workExperience as w}
+          <WorkExperienceEntry
+            position={w.position}
+            org={w.org}
+            date={w.date}
+            src={w.src}
+            alt={w.alt}
+          />
+        {/each}
+        <h2>Awards</h2>
+        <Award
+          position="The Willimott Prize"
+          org="Durham Geography Department"
+          date="2019"
+          description=""
+        />
+        <!-- I was awarded the Willimott Prize by Durham Geography Department for attaining the second highest grade in the year and substantial work in glacial geomorphology and sedimentology. -->
+        <Award
+          position="Duke of Ediburgh's Award"
+          org="Gold, Silver, and Bronze"
+          date="2014 - 2017"
+          description=""
+        />
+        <h2>Interests</h2>
+        <div id="interest">
+          {#each interests as i}
+            <img class="interest" src={i.src} alt={i.alt} />
+          {/each}
+        </div>
+      </div>
+    </section>
+  </div>
 </main>
 <footer>Designed and built by Mel Marochov | 2023</footer>
 
@@ -144,35 +134,86 @@
     margin: 0 auto;
   }
 
+  .hover-1 {
+    padding: 5px;
+    border-radius: 10px;
+  }
+
+
+  .padded {
+    padding: 0 5px;
+  }
+
+  .interest {
+    height: 30px;
+    width: 30px;
+    margin: 0;
+    padding: 5px;
+    border-radius: 0;
+  }
+
+  #interest {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+  }
+
+  .content {
+    width: 84%;
+    align-self: center;
+  }
+
+  .publications {
+    padding: 20px;
+  }
+
+  h2 {
+    text-align: center;
+    margin: 30px 0 5px 0;
+  }
+  .workExp {
+    margin: 0;
+  }
+
   header {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
 
+  .education {
+    border-radius: 5px;
+  }
+
   #duo-column {
     display: flex;
-    max-width: 80%;
     align-self: center;
   }
 
-  #col1 {
+  .col {
     width: 50%;
-    margin: 0 40px 40px 0;
+    border-radius: 5px;
+  }
+
+  .first {
+    margin-right: 10px;
+  }
+
+  .second {
+    margin-left: 10px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.148);
   }
 
   img {
-    width: 22%;
+    width: 28%;
     border-radius: 50%;
     margin-block-start: 3em;
   }
 
-  /* h1 {
-    font-weight: normal;
-  } */
-
   p {
     margin: 0;
+    text-align: left;
   }
 
   .social {
@@ -182,6 +223,7 @@
 
   section {
     text-align: -webkit-center;
+    margin: 60px 0;
   }
 
   footer {

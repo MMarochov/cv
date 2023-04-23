@@ -4,26 +4,66 @@ body {
   padding: 40px 0 0 0;
   width: 100%;
   height: 100%;
-  background: #2C3E50;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #4CA1AF, #2C3E50);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #4CA1AF, #2C3E50); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+  background: #9bc886; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right top,
+    #9bc886,
+    #67bb94,
+    #35aba2,
+    #0e99aa,
+    #2984a8,
+    #3685ab,
+    #4286ae,
+    #4c87b0,
+    #4b9fc1,
+    #51b7cf,
+    #62cfd8,
+    #7ce6de
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right top,
+    #9bc886,
+    #67bb94,
+    #35aba2,
+    #0e99aa,
+    #2984a8,
+    #3685ab,
+    #4286ae,
+    #4c87b0,
+    #4b9fc1,
+    #51b7cf,
+    #62cfd8,
+    #7ce6de
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-attachment: fixed;
   font-family: "Source Sans Pro", sans-serif;
   font-weight: 400;
   line-height: 1.6;
 }
+
+.date {
+  color: #a0a0a0;
+  margin: 0;
+}
+
 .hover-1 {
-  background-image: linear-gradient(#4ca2af89, #4ca1af89);
+  background: linear-gradient(
+    to right top,
+    #4286ae,
+    #4c87b0,
+    #4b9fc1,
+    #51b7cf,
+    #62cfd8,
+    #7ce6de
+  );
   background-size: 0 100%;
   background-repeat: no-repeat;
   transition: 0.4s;
 }
+
 .hover-1:hover {
   background-size: 100% 100%;
-}
-
-h2 {
-  margin-top: 60px;
+  color: #fff;
 }
 
 a {
@@ -32,7 +72,6 @@ a {
 // background: #616161;  /* fallback for old browsers */
 // background: -webkit-linear-gradient(to right, #9bc5c3, #616161);  /* Chrome 10-25, Safari 5.1-6 */
 // background: linear-gradient(to right, #9bc5c3, #616161); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
 
 label {
   display: block;
@@ -81,12 +120,12 @@ button:focus {
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #2C3E50;
+  background: #2c3e50;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #4CA1AF;
+  background: #4ca1af;
   border-radius: 10px;
 }
 

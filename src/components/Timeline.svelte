@@ -10,6 +10,7 @@
   export let months;
   export let description;
   export let skills;
+  export let years;
 
   let isOpen = false;
   const toggle = () => (isOpen = !isOpen);
@@ -20,10 +21,7 @@
   <section id="timeline-entry">
     <div id="date">
       <p>{months}</p>
-      <p>Key Skills:</p>
-      {#each skills as s}
-        <div class="skill"> {s} </div>
-      {/each}
+      <p class="date">{years}</p>
     </div>
     <summary id="panel" on:click={toggle}>
       <button>
@@ -34,13 +32,18 @@
           {description}
         </p>
       {/if}
+      <section class="skill-container">
+        <p>Core Skills:</p>
+        {#each skills as s}
+          <div class="skill">{s}</div>
+        {/each}
+      </section>
     </summary>
   </section>
 </article>
 
 <style>
   #timeline {
-    width: 80%;
     max-width: 960px;
     display: flex;
   }
@@ -51,23 +54,42 @@
     margin: 0px;
     padding: 0.4rem 0 0.4rem;
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-start;
     align-items: center;
   }
 
   #date {
-    width: 20%;
+    width: 8%;
     padding-top: 0.3rem;
     font-size: 0.8rem;
     font-weight: bold;
   }
-  
+
+  .skill-container {
+    display: flex;
+    padding: 2px;
+    color: #a0a0a0;
+    font-weight: bold;
+  }
+
   .skill {
-    background: red;
+    color: white;
+    background: linear-gradient(
+      to right top,
+      #3685ab,
+      #4286ae,
+      #4c87b0,
+      #4b9fc1,
+      #51b7cf,
+      #62cfd8,
+      #7ce6de
+    );
     border-radius: 10px;
     width: fit-content;
     padding: 0 10px;
-    margin: 5px;
+    margin: 0 4px;
+    font-weight: normal;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.148);
   }
 
   p {
@@ -79,19 +101,20 @@
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    width: 70%;
+    width: 80%;
     overflow: hidden;
     position: relative;
     box-shadow: 0 0 6px rgba(0, 0, 0, 0.148);
     border-radius: 3px;
-    padding: .5rem;
+    padding: 0.5rem;
     cursor: pointer;
     -webkit-tap-highlight-color: transparent;
-    font-size: .9rem;
+    font-size: 0.9rem;
+    margin: 0 0 0 70px;
   }
 
   #panel:hover {
-    background: rgba(0, 0, 0, 0.023);
+    background: rgba(220, 220, 220, 0.552);
   }
 
   button {
@@ -111,7 +134,7 @@
   #timeline-entry:before {
     top: 0;
     bottom: 0;
-    left: 22%;
+    left: 12%;
     position: absolute;
     content: "";
     width: 0.1rem;
@@ -123,7 +146,7 @@
     content: "";
     height: 0.1rem;
     width: 0.8rem;
-    left: 22%;
+    left: 12%;
     background: #000;
     position: absolute;
     box-shadow: 1px 1px 6px #0000003a, -1px -1px 6px #0000001f;
