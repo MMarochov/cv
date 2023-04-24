@@ -22,7 +22,7 @@ export const workExperience = [
   {
     position: "Marine Geoscientist",
     org: "British Geological Survey",
-    date: "January 2021",
+    date: "August 2019",
     src: "./images/British_Geological_Survey.png",
     alt: "British Geological Survey",
     href: "https://www.bgs.ac.uk/",
