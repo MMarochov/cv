@@ -30,13 +30,22 @@
     <section>
       <h2>Employment History</h2>
       <Experience
-        position="Graduate Scheme"
+        position="Associate Data Scientist",
         org="Ordnance Survey"
-        date="September 2021 - present"
+        date="June 2023 - present"
         src="./images/Ordnance-Survey-logo-dark.svg"
         alt="Ordnance Survey logo"
         href="https://www.ordnancesurvey.co.uk/"
-        description="Throughout the graduate scheme I have specialised in spatial data science, web development, and practical ethics at the intersection of geospatial data and artifical intelligence (GeoAI). I've traversed the business through three placements:"
+        description="I'm currently a member of Earth Observation and Analytics Squad 1 where I've started working on improving the robustness of our machine learning methods for peatland classification. The highlights so far have been experimenting with different clustering and unsupervised segmentation techniques, helping graduates in their technical development, and pair or mob programming while still having protected time to work on a personal development project to enhance my machine learning skills."
+      />
+      <Experience
+        position="Graduate Scheme"
+        org="Ordnance Survey"
+        date="September 2021 - June 2023"
+        src="./images/Ordnance-Survey-logo-dark.svg"
+        alt="Ordnance Survey logo"
+        href="https://www.ordnancesurvey.co.uk/"
+        description="Throughout the graduate scheme I specialised in spatial data science, web development, and practical ethics at the intersection of geospatial data and artifical intelligence (GeoAI). I traversed the business through four placements:"
       />
       {#each placements as p}
         <Timeline
