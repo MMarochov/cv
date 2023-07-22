@@ -17,7 +17,6 @@
 <style>
   .container {
     text-align: left;
-    padding: 0 20px;
   }
 
   .date {

@@ -8,7 +8,7 @@ export const placements = [
     years: "2023",
     skills: ["Python", "GeoPandas", "Databricks", "Azure Storage Explorer", "Git"],
     description:
-      "My final placement of the graduate scheme was short but allowed me to gain insight into applying geospatial data science techniques at scale for public sector data enhancements, particularly through using the Databricks web-based platform, cloud-based clusters, and mounted storage.",
+      "My final placement of the graduate scheme allowed me to gain insight into applying geospatial data science techniques at scale for public sector data enhancements, particularly through using the Databricks web-based platform, cloud-based clusters, and mounted storage.",
   },
     {
       open: true,
@@ -19,7 +19,7 @@ export const placements = [
       years: "2022/23",
       skills: ["Python", "SQL", "Customer-focused", "QGIS", "PostGIS", "PostgreSQL", "DataViz"],
       description:
-        "As part of this team, I worked on shaping a critical national dataset that will underpin census data analysis; simplified the complex to help customers understand technical concepts in an accessible manner and maintain effective relationships (e.g., through building a web map for a TV presenter);  produced data visualisations that received higher-than-average public engagement on social media; and introduced Git and Azure DevOps to the team, helping them upskill and use better code sharing practice.",
+        "As part of this team, I worked on shaping a critical national dataset that will underpin census data analysis; simplified the complex to help customers understand technical concepts in an accessible manner and maintain effective relationships (e.g., through building a web map for a TV presenter); and introduced Git and Azure DevOps to the team, helping them upskill and use better code sharing practice.",
     },
     {
       open: true,
@@ -30,7 +30,7 @@ export const placements = [
       years: "2022",
       skills: ["Python", "Html", "Svelte", "CSS", "Agile", "Protoyping", "Git"],
       description:
-        "In the RPT, I got thrown in at the deep end of geospatial data science and web development. I worked on a diverse array of customer-centric prototypes with geospatial data at their core, enhancing skills such as Python programming, agile development and presenting in regular business-wide demos. The fast-paced environment and fun team culture made the RPT my favourite placement.",
+        "In the RPT, I got thrown in at the deep end of geospatial data science and web development. I worked on a diverse array of customer-centric prototypes with geospatial data at their core, enhancing skills such as Python programming, agile development, collaborative problem solving, and presenting in regular business-wide demos. The fast-paced environment and fun team culture made the RPT my favourite placement.",
     },
     {
       open: true,

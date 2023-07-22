@@ -3,13 +3,11 @@
   import CircleProgressBar from "./CircleProgressBar.svelte";
   // Props
   export let name;
-  export let progress;
 </script>
 
 <div class="container">
-  <CircleProgressBar {progress} />
   <div id="details">
-    <h4>{name}</h4>
+    <h3>{name}</h3>
     <slot />
   </div>
 </div>
@@ -23,12 +21,8 @@
     padding: 10px 0;
   }
 
-  h4 {
+  h3 {
     margin: 0;
-  }
-
-  #details {
-    padding-left: 10px;
-    max-width: 310px;
+    font-size: 1.1em;
   }
 </style>
