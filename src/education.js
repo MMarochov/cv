@@ -16,7 +16,7 @@ export const education = [
     src: "./images/Durham-University-logo-dark.svg",
     date: "October 2016 ‑ July 2019",
     headline: "First Class Honours",
-    description: "",
+    description: "I became very familiar with geospatial data during my degree, particularly through modules such as Remote Sensing and Handling Geographic Information. This was supplemented by my dissertation, titled 'Mapping the seasonal and inter-annual evolution of supraglacial meltwater features on Nivlisen Ice Shelf, East Antarctica', for which the primary data sources were Landsat 8 and Sentinel-2 imagery.",
   },
   {
     education: "Advanced Highers, Highers",
