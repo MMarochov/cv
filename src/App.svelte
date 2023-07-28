@@ -21,7 +21,7 @@
     <header>
       <img src="./images/mel.jpg" alt="Mel's headshot" />
       <h1>Melanie Marochov</h1>
-      <p>Geospatial Data Scientist and Developer</p>
+      <p class="intro">I'm a geospatial data scientist and developer. I’m adaptable, always learning, and ready to be thrown in at the deep end! Outside of work I love being creative or out in nature ⋆｡☾ ﾟ⋆｡ </p>
       <div class="social">
         {#each socials as s}
           <Social social={s.social} name={s.name} href={s.href} icon={s.icon} />
