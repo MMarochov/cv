@@ -38,7 +38,7 @@
         src="./images/Ordnance-Survey-logo-dark.svg"
         alt="Ordnance Survey logo"
         href="https://www.ordnancesurvey.co.uk/"
-        description="As a member of the Earth Observation and Analytics Squad, I am currently focused on enhancing the robustness of our machine learning methods for peatland classification, utilizing remotely sensed imagery to provide actionable insights for customers interested in carbon finance. I've particularly enjoyed experimenting with different unsupervised segmentation techniques and supporting graduates in their technical development."
+        description="As a member of the Earth Observation and Analytics Squad, I am currently focused on enhancing the robustness of our machine learning methods for peatland classification, utilizing remotely sensed imagery to provide actionable insights for customers interested in carbon finance. I've particularly enjoyed experimenting with different clustering and classification techniques, and supporting graduates in their technical development."
       />
       <Experience
         position="Graduate Scheme"
@@ -86,7 +86,7 @@
           <h2>Publications</h2>
 
           <p class="hover-1">
-            <a href="https://tc.copernicus.org/articles/15/5041/2021/"
+            <a target="_blank" href="https://tc.copernicus.org/articles/15/5041/2021/"
               >Image classification of marine-terminating outlet glaciers in
               Greenland using deep learning methods</a
             >
@@ -167,6 +167,11 @@
     display: flex;
     flex-direction: column;
     margin: 0 auto;
+  }
+
+  .intro {
+    text-align: center;
+    width: 90%;
   }
 
   h3 {
@@ -270,6 +275,8 @@
   .social {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 
   section {

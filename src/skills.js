@@ -3,7 +3,7 @@
 export const skills = [ // List of contact information
     {
         name: "Geospatial Data Analysis",
-        text: "QGIS, ArcGIS, SQL, PostGIS, Remote Sensing Imagery Processing (Aerial, Sentinel-2, Landsat), GeoPandas, MovingPandas, Shapely, Rasterio, osdatahub"
+        text: "QGIS, ArcGIS, SQL, PostGIS, Remote Sensing Imagery Processing (Aerial, Sentinel-2, Landsat), GeoPandas, MovingPandas, Shapely, Rasterio, Fiona, Gdal, OSdatahub"
     },
     {
         name: "Data Science",

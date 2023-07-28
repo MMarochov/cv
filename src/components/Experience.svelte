@@ -12,7 +12,7 @@
 <section class="container">
   <p class="date">{date}</p>
   <div class="header">
-    <h3>{position} @ <a class="hover-1" {href}>{org}</a></h3>
+    <h3>{position} @ <a class="hover-1" target="_blank" {href}>{org}</a></h3>
     <img {src} {alt} />
   </div>
   <p>{description}</p>
@@ -32,10 +32,14 @@
 
   h3 {
     margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
   }
 
   a {
-    padding: 5px 10px 10px 10px;
+    padding: 5px 10px 5px 10px;
+    margin: 0 2px;
     border-radius: 10px;
   }
 

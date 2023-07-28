@@ -67,7 +67,8 @@
 
   .skill-container {
     display: flex;
-    padding: 2px;
+    flex-wrap: wrap;
+    align-items: center;
     color: #a0a0a0;
     font-weight: bold;
   }
@@ -87,7 +88,7 @@
     border-radius: 10px;
     width: fit-content;
     padding: 0 10px;
-    margin: 0 4px;
+    margin: 4px;
     font-weight: normal;
     box-shadow: 0 0 6px rgba(0, 0, 0, 0.148);
   }
@@ -166,7 +167,7 @@
 
   @media only screen and (max-width: 1050px) {
     #timeline {
-      max-width: 80%;
+      max-width: 100%;
     }
 
     #timeline-entry {
@@ -189,6 +190,7 @@
       width: 100%;
       align-items: flex-end;
       border-radius: 0px;
+      margin: 0;
     }
 
     #date {

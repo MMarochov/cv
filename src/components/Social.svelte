@@ -7,7 +7,7 @@
 
 <p class="hover-1">
   <i class={icon} />
-  <a {href}>{name}</a>
+  <a {href} target="_blank">{name}</a>
 </p>
 
 <style>

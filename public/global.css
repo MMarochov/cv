@@ -133,3 +133,9 @@ button:focus {
 ::-webkit-scrollbar-thumb:hover {
   background: #478579;
 }
+
+@media only screen and (max-width: 960px) {
+  body, html {
+    padding: 0;
+  }
+}

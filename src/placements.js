@@ -28,7 +28,7 @@ export const placements = [
       team: "Rapid Prototyping Team (RPT)",
       months: "April - September",
       years: "2022",
-      skills: ["Python", "Html", "Svelte", "CSS", "Agile", "Protoyping", "Git"],
+      skills: ["Python", "Html", "Svelte", "CSS", "Agile", "Protoyping", "Git", "Presenting"],
       description:
         "In the RPT, I got thrown in at the deep end of geospatial data science and web development. I worked on a diverse array of customer-centric prototypes with geospatial data at their core, enhancing skills such as Python programming, agile development, collaborative problem solving, and presenting in regular business-wide demos. The fast-paced environment and fun team culture made the RPT my favourite placement.",
     },
@@ -39,7 +39,7 @@ export const placements = [
       team: "Research Team",
       months: "September - March",
       years: "2021/22",
-      skills: ["GeoAI ethics", "Microsoft Azure", "DevOps"],
+      skills: ["GeoAI ethics", "Microsoft Azure", "DevOps", "Research", "Event Planning"],
       description:
         "In my first placement I focused on advancing OS's efforts to incorporate ethical practice in geospatial data and artificial intelligence (GeoAI) workflows. Some of the highlights were running an external-facing hybrid workshop on practical tools in GeoAI ethics, and introducing Model Cards through creating an internal Model Hub for OS's machine learning algorithms.",
     },
