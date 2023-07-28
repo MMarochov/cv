@@ -38,12 +38,20 @@
   }
 
   a {
-    padding: 5px 10px 5px 10px;
+    padding: 5px 10px;
     margin: 0 2px;
     border-radius: 10px;
   }
 
   img {
     height: 30px;
+    padding: 0 15px;
   }
+
+  @media only screen and (max-width: 599px) {
+    a {
+    padding: 5px 0;
+    margin: 0 2px;
+    border-radius: 10px;
+  }}
 </style>
