@@ -19,7 +19,7 @@
 <main>
   <div class="content">
     <header>
-      <img src="./images/mel.jpg" alt="Mel's headshot" />
+      <img src="./images/mel.jpg" alt="Mel's headshot" style="margin-top: 3rem"/>
       <h1>Melanie Marochov</h1>
       <p class="intro">I'm a geospatial data scientist and developer. I’m adaptable, always learning, and ready to be thrown in at the deep end! Outside of work I love being creative or out in nature ⋆｡☾ ﾟ⋆｡ </p>
       <div class="social">
