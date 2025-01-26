@@ -38,7 +38,7 @@
         src="./images/Ordnance-Survey-logo-dark.svg"
         alt="Ordnance Survey logo"
         href="https://www.ordnancesurvey.co.uk/"
-        description="Over the past two years I've strengthened a diverse array of skills from prototyping new datasets to typescript development. I'm particularly proud of designing and building a Business Intelligence tool to democratise access to OS data for technical and non-technical users alike and co-organising the first ever OS Data Science Conference."
+        description="Over the past two years I've strengthened a diverse array of skills from prototyping new datasets to typescript development. I'm particularly proud of designing and building a Business Intelligence tool to democratise access to OS data for technical and non-technical users alike, and co-organising the first ever OS Data Science Conference."
       />
       <Experience
         position="Graduate Scheme"
