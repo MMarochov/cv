@@ -4,22 +4,22 @@ export const placements = [
     org: "Ordnance Survey",
     role: "Graduate Data Scientist",
     team: "Data Science Team, Chief Geospatial Office",
-    months: "April - June",
+    months: "May - June",
     years: "2023",
     skills: ["Python", "GeoPandas", "Databricks", "Azure Storage Explorer", "Git"],
     description:
-      "My final placement of the graduate scheme allowed me to gain insight into applying geospatial data science techniques at scale for public sector data enhancements, particularly through using the Databricks web-based platform, cloud-based clusters, and mounted storage.",
+      "Despite the brevity of my final placement on the graduate scheme, I gained insight into applying geospatial data science techniques at scale for public sector data enhancements, particularly through getting to grips with Databricks.",
   },
     {
       open: true,
       org: "Ordnance Survey",
       role: "Graduate Technical Consultant",
-      team: "Developer Experience Team",
+      team: "CaTS Developer Experience Team",
       months: "September - April",
       years: "2022/23",
       skills: ["Python", "SQL", "Customer-focused", "QGIS", "PostGIS", "PostgreSQL", "DataViz"],
       description:
-        "As part of this team, I worked on shaping a critical national dataset that will underpin census data analysis; simplified the complex to help customers understand technical concepts in an accessible manner and maintain effective relationships (e.g., through building a web map for a TV presenter); and introduced Git and Azure DevOps to the team, helping them upskill and use better code sharing practice.",
+        "As part of this team, I spent time troubleshooting customer problems, simplified the complex to help customers understand technical concepts in an accessible manner, and introduced Git and Azure DevOps to the team, helping them upskill and use better code sharing practice. The most interesting project I worked on was making a web map for Timmy Mallett to publicise his cycling circumnavigation of Great Britain.",
     },
     {
       open: true,
@@ -30,7 +30,7 @@ export const placements = [
       years: "2022",
       skills: ["Python", "Html", "Svelte", "CSS", "Agile", "Protoyping", "Git", "Presenting"],
       description:
-        "In the RPT, I got thrown in at the deep end of geospatial data science and web development. I worked on a diverse array of customer-centric prototypes with geospatial data at their core, enhancing skills such as Python programming, agile development, collaborative problem solving, and presenting in regular business-wide demos. The fast-paced environment and fun team culture made the RPT my favourite placement.",
+        "In the RPT, I got thrown in at the deep end of geospatial data science and web development. I worked on a plethora of customer-centric prototypes with geospatial data at their core, enhancing skills such as Python programming, agile development, collaborative problem solving, and presenting in regular business-wide demos. The fast-paced environment and fun team culture made the RPT my favourite placement.",
     },
     {
       open: true,
