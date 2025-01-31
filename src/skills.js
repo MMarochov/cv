@@ -15,11 +15,11 @@ export const skills = [ // List of contact information
     },
     {
         name: "Web Development",
-        text: "HTML, CSS, JavaScript, Leaflet, Svelte, Hugo, Node, NPM"
+        text: "HTML, CSS, JavaScript, TypeScript, Leaflet, Svelte, Hugo, Node, NPM"
     },
     {
         name: "Prototyping",
-        text: "Creative Problem Solving, Human-Centered Design, Collaborative Working"
+        text: "Creative Problem Solving, Collaborative Working, User Testing and Feedback"
     }, 
     {
         name: "Soft Skills",

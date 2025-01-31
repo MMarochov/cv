@@ -1,10 +1,10 @@
 export const socials = [
-    {
-      social: "Website",
-      name: "itsmel.io",
-      href: "https://itsmel.io",
-      icon: "fa-solid fa-rocket",
-    },
+    // {
+    //   social: "Website",
+    //   name: "itsmel.io",
+    //   href: "https://itsmel.io",
+    //   icon: "fa-solid fa-rocket",
+    // },
     {
       social: "GitHub",
       name: "MMarochov",

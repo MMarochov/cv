@@ -15,7 +15,7 @@
     <h3>{position} @ <a class="hover-1" target="_blank" {href}>{org}</a></h3>
     <img {src} {alt} />
   </div>
-  <p>{description}</p>
+  <p class="description">{description}</p>
 </section>
 
 <style>
@@ -46,6 +46,10 @@
   img {
     height: 30px;
     padding: 0 15px;
+  }
+
+  .description {
+    margin: 0 0 25px 0;
   }
 
   @media only screen and (max-width: 599px) {

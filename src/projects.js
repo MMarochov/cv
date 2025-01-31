@@ -1,28 +1,24 @@
 export const projects = [
-  // List of contact information
+  {
+    title: "OS Data Hub Explorer",
+    description:
+      "Helped develop the OS Data Hub Explorer, a tool which allowed customers to easily visualise and query the data they need. I informally maintained the tool when it transitioned to internal-only, programmatically ensuring it updates with new NGD releases.",
+    link: "https://labs.ite.os.uk/prototyping/data-hub-explorer/",
+  },
+  {title: "Complex Buildings Intelligence",
+  description: "Part of the team that developed Complex Buildings Intelligence for the Partner Channel - combining insights from different datasets to help altnets maximise return on investment and taking a key role to develop a frontend displaying the power of the data.",
+  link: "https://www.ordnancesurvey.co.uk/news/os-unveils-game-changing-advantage-for-altnets#:~:text=%E2%80%9CComplex%20Building%20Intelligence%20basically%20removes,network%20planning%20or%20GIS%20software."},
   {
     title: "Timmy Mallett's Web Map",
     description:
       "Lead developer and consultant for Timmy Mallett's Utterly Brilliant Britain web map (written in Svelte), which is designed to promote OS maps, and visualise Timmy's artwork and GB-circumnavigating cycle routes to his social media following.",
-    link: "https://labs.os.uk/tmp/mallett-map/",
+    link: "https://getoutside.ordnancesurvey.co.uk/guides/timmy-mallett-cycles-britain/",
   },
   {
     title: "OS ML Model Hub",
     description:
-      "Co-creator of the OS Model Hub, developed to integrate Model Cards into our GeoAI workflows and promote ethical practice.",
-    link: "https://nice-bay-0c89e3803.1.azurestaticapps.net/",
-  },
-  {
-    title: "OS Data Hub Explorer",
-    description:
-      "As a developer of the OS Data Hub Explorer, I played a key role in creating a tool that helps customers easily visualise and query the data they need.",
-    link: "https://labs.os.uk/prototyping/data-hub-explorer/",
-  },
-  {
-    title: "ONS Data Science Accelerator",
-    description:
-      "I recently graduated from the ONS Data Science Accelerator where I've been working on a project to help make our data more accessible by predicting path surface types from aerial imagery using machine learning.",
-    link: "",
+      "Co-creator of the OS Model Hub, developed to integrate Model Cards into our GeoAI workflows and promote ethical practice."
+    // link: "https://nice-bay-0c89e3803.1.azurestaticapps.net/",
   },
   {
     title: "#30DayMapChallenge",

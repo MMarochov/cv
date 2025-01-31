@@ -38,7 +38,7 @@
         src="./images/Ordnance-Survey-logo-dark.svg"
         alt="Ordnance Survey logo"
         href="https://www.ordnancesurvey.co.uk/"
-        description="As a member of the Earth Observation and Analytics Squad, I am currently focused on enhancing the robustness of our machine learning methods for peatland classification, utilizing remotely sensed imagery to provide actionable insights for customers interested in carbon finance. I've particularly enjoyed experimenting with different clustering and classification techniques, and supporting graduates in their technical development."
+        description="Over the past two years I've strengthened a diverse array of skills from prototyping new datasets to typescript development. I'm particularly proud of designing and building a Business Intelligence tool to democratise access to OS data for technical and non-technical users alike, and co-organising the first ever OS Data Science Conference."
       />
       <Experience
         position="Graduate Scheme"
@@ -155,7 +155,7 @@
     </section>
   </div>
 </main>
-<footer>Designed and built by Mel Marochov | 2023</footer>
+<footer>Designed and built by Mel Marochov</footer>
 
 <style>
   main {
