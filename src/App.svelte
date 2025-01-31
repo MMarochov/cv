@@ -155,7 +155,7 @@
     </section>
   </div>
 </main>
-<footer>Designed and built by Mel Marochov | 2023</footer>
+<footer>Designed and built by Mel Marochov</footer>
 
 <style>
   main {
